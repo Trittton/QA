@@ -13,7 +13,7 @@
 —
 13) переместить любые 2 файла, которые вы создали, в любую другую папку. -  mv foldername_1/new_file_1.json foldername_1/new_file_2.txt 'foldername_1/foldername_4'
 14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp foldername_1/new_file_2.json foldername_1/new_file_2.txt 'foldername_1/foldername_5'
-15) Найти файл по имени - find /path_to_folder filename
+15) Найти файл по имени - find /path_to_folder -name
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - grep options filename - удобный метод поиска и фильтрации файлов и строчек внутри файлов
 17) вывести несколько первых строк из текстового файла - head -n2 filename
 18) вывести несколько последних строк из текстового файла - tail -n2 filename
