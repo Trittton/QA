@@ -4,20 +4,21 @@
 4) Создать 3 папки - mkdir foldername_1 foldername_2 foldername_3
 5) Зайти в любоую папку - cd foldername_1
 6) Создать 5 файлов (3 txt, 2 json) - touch new_file_{1..3}.txt new_file_{1..2}.json
-7) Создать 3 папки - mkdir foldername_{4..7}
+7) Создать 3 папки - mkdir foldername_{4..6}
 8. Вывести список содержимого папки - ls -la
 9) + Открыть любой txt файл - vim new_file_1.txt
 10) + написать туда что-нибудь, любой текст. - нажать i, написать text
 11) + сохранить и выйти. - нажать Esc, ввести :wq
 12) Выйти из папки на уровень выше - cd ..
 —
-13) переместить любые 2 файла, которые вы создали, в любую другую папку. -  mv foldername/new_file_1.json foldername/new_file_1.txt '/c/HW_1/foldername/foldername_1'
-14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp foldername/new_file_2.json foldername/new_file_2.txt '/c/HW_1/foldername/foldername_2'
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. -  mv foldername/new_file_1.json foldername1/new_file_2.txt 'foldername1/foldername_4'
 15) Найти файл по имени - find / filename
-16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - удобный метод поиска и фильтрации файлов
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp foldername/new_file_2.json foldername1/new_file_2.txt 'foldername1/foldername_5'
+15) Найти файл по имени - find / filename
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - grep options filename - удобный метод поиска и фильтрации файлов и строчек внутри файлов
 17) вывести несколько первых строк из текстового файла - head -n2 filename
 18) вывести несколько последних строк из текстового файла - tail -n2 filename
-19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - метод постраничного просмотра и поиска текса в текстовых файлах
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less filename - метод постраничного просмотра и поиска текса в текстовых файлах.
 20) вывести дату и время - date +%F%T
 
 1) Отправить http запрос на сервер.
@@ -26,6 +27,10 @@ http://162.55.220.72:5005/terminal-hw-request
 Ответ:  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   237  100   237    0     0   3796      0 --:--:-- --:--:-- --:--:--  3822{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+Отправил запрос: curl "http://162.55.220.72:5005/get_method?name=Bogdan&age=22"
+Получил: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    16  100    16    0     0    246      0 --:--:-- --:--:-- --:--:--   250["Bogdan","22"]
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
