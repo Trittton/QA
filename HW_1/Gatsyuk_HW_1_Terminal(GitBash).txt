@@ -52,7 +52,7 @@ cd foldername_1
 echo "Аction_6.Create 5 files"
 touch new_file_{1..3}.txt new_file_{1..2}.json
 echo "Аction_7.Create 3 folders"
-mkdir foldername_{4..7}
+mkdir foldername_{4..6}
 echo "Аction_8.Content list"
 ls -la
 echo "Аction_13.Move 2 any files"
