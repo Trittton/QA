@@ -1,0 +1,5 @@
+#!/bin/bash
+# for comment
+git add .
+git commit -m '.'
+git push
